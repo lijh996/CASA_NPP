@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82E09FA6-42CC-4C85-9902-E87FCE88B11F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>casanpp</RootNamespace>
+    <AssemblyName>casanpp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdalconst_csharp, Version=1.0.7538.14000, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\gdalconst_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdal_csharp, Version=1.0.7538.13999, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ogr_csharp, Version=1.0.7538.13997, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ogr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="osr_csharp, Version=1.0.7538.13996, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\osr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CASANPP.cs" />
+    <Compile Include="GDALRead.cs" />
+    <Compile Include="InitGDAL.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="gdal2.2.2\gata-data\compdcs.csv" />
+    <None Include="gdal2.2.2\gata-data\coordinate_axis.csv" />
+    <None Include="gdal2.2.2\gata-data\cubewerx_extra.wkt" />
+    <None Include="gdal2.2.2\gata-data\datum_shift.csv" />
+    <None Include="gdal2.2.2\gata-data\default.rsc" />
+    <None Include="gdal2.2.2\gata-data\ecw_cs.wkt" />
+    <None Include="gdal2.2.2\gata-data\ellipsoid.csv" />
+    <None Include="gdal2.2.2\gata-data\epsg.wkt" />
+    <None Include="gdal2.2.2\gata-data\esri_epsg.wkt" />
+    <None Include="gdal2.2.2\gata-data\esri_extra.wkt" />
+    <None Include="gdal2.2.2\gata-data\esri_StatePlane_extra.wkt" />
+    <None Include="gdal2.2.2\gata-data\esri_Wisconsin_extra.wkt" />
+    <None Include="gdal2.2.2\gata-data\gcs.csv" />
+    <None Include="gdal2.2.2\gata-data\gcs.override.csv" />
+    <None Include="gdal2.2.2\gata-data\gdalvrt.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gdal2.2.2\gata-data\gdal_datum.csv" />
+    <None Include="gdal2.2.2\gata-data\geoccs.csv" />
+    <None Include="gdal2.2.2\gata-data\gmlasconf.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gdal2.2.2\gata-data\gt_datum.csv" />
+    <None Include="gdal2.2.2\gata-data\gt_ellips.csv" />
+    <None Include="gdal2.2.2\gata-data\header.dxf" />
+    <None Include="gdal2.2.2\gata-data\inspire_cp_BasicPropertyUnit.gfs" />
+    <None Include="gdal2.2.2\gata-data\inspire_cp_CadastralBoundary.gfs" />
+    <None Include="gdal2.2.2\gata-data\inspire_cp_CadastralParcel.gfs" />
+    <None Include="gdal2.2.2\gata-data\inspire_cp_CadastralZoning.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_AdmArea.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_AdmBdry.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_AdmPt.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_BldA.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_BldL.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_Cntr.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_CommBdry.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_CommPt.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_Cstline.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_ElevPt.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_GCP.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_LeveeEdge.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RailCL.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RdArea.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RdASL.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RdCompt.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RdEdg.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RdMgtBdry.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RdSgmtA.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_RvrMgtBdry.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_SBAPt.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_SBArea.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_SBBdry.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_WA.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_WL.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_WStrA.gfs" />
+    <None Include="gdal2.2.2\gata-data\jpfgdgml_WStrL.gfs" />
+    <None Include="gdal2.2.2\gata-data\netcdf_config.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gdal2.2.2\gata-data\nitf_spec.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gdal2.2.2\gata-data\ogrvrt.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gdal2.2.2\gata-data\osmconf.ini" />
+    <None Include="gdal2.2.2\gata-data\ozi_datum.csv" />
+    <None Include="gdal2.2.2\gata-data\ozi_ellips.csv" />
+    <None Include="gdal2.2.2\gata-data\pcs.csv" />
+    <None Include="gdal2.2.2\gata-data\pcs.override.csv" />
+    <None Include="gdal2.2.2\gata-data\plscenesconf.json" />
+    <None Include="gdal2.2.2\gata-data\prime_meridian.csv" />
+    <None Include="gdal2.2.2\gata-data\projop_wparm.csv" />
+    <None Include="gdal2.2.2\gata-data\ruian_vf_ob_v1.gfs" />
+    <None Include="gdal2.2.2\gata-data\ruian_vf_st_uvoh_v1.gfs" />
+    <None Include="gdal2.2.2\gata-data\ruian_vf_st_v1.gfs" />
+    <None Include="gdal2.2.2\gata-data\ruian_vf_v1.gfs" />
+    <None Include="gdal2.2.2\gata-data\s57agencies.csv" />
+    <None Include="gdal2.2.2\gata-data\s57attributes.csv" />
+    <None Include="gdal2.2.2\gata-data\s57expectedinput.csv" />
+    <None Include="gdal2.2.2\gata-data\s57objectclasses.csv" />
+    <None Include="gdal2.2.2\gata-data\seed_2d.dgn" />
+    <None Include="gdal2.2.2\gata-data\seed_3d.dgn" />
+    <None Include="gdal2.2.2\gata-data\stateplane.csv" />
+    <None Include="gdal2.2.2\gata-data\trailer.dxf" />
+    <None Include="gdal2.2.2\gata-data\unit_of_measure.csv" />
+    <None Include="gdal2.2.2\gata-data\vdv452.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gdal2.2.2\gata-data\vertcs.csv" />
+    <None Include="gdal2.2.2\gata-data\vertcs.override.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gdal2.2.2\gata-data\gdalicon.png" />
+    <Content Include="gdal2.2.2\gata-data\GDALLogoBW.svg" />
+    <Content Include="gdal2.2.2\gata-data\GDALLogoColor.svg" />
+    <Content Include="gdal2.2.2\gata-data\GDALLogoGS.svg" />
+    <Content Include="gdal2.2.2\gata-data\gmlasconf.xml" />
+    <Content Include="gdal2.2.2\gata-data\gml_registry.xml" />
+    <Content Include="gdal2.2.2\gata-data\nitf_spec.xml" />
+    <Content Include="gdal2.2.2\gata-data\pci_datum.txt" />
+    <Content Include="gdal2.2.2\gata-data\pci_ellips.txt" />
+    <Content Include="gdal2.2.2\gata-data\pds4_template.xml" />
+    <Content Include="gdal2.2.2\gata-data\vdv452.xml" />
+    <Content Include="gdal2.2.2\gdal202.dll" />
+    <Content Include="gdal2.2.2\gdalconst_csharp.dll" />
+    <Content Include="gdal2.2.2\gdalconst_wrap.dll" />
+    <Content Include="gdal2.2.2\gdal_csharp.dll" />
+    <Content Include="gdal2.2.2\gdal_wrap.dll" />
+    <Content Include="gdal2.2.2\geos.dll" />
+    <Content Include="gdal2.2.2\geos_c.dll" />
+    <Content Include="gdal2.2.2\hd426m.dll" />
+    <Content Include="gdal2.2.2\hdf.dll" />
+    <Content Include="gdal2.2.2\hdf5.dll" />
+    <Content Include="gdal2.2.2\hdf5dll.dll" />
+    <Content Include="gdal2.2.2\hdf5_cpp.dll" />
+    <Content Include="gdal2.2.2\hdf5_cppdll.dll" />
+    <Content Include="gdal2.2.2\hdf5_f90cstubdll.dll" />
+    <Content Include="gdal2.2.2\hdf5_fortrandll.dll" />
+    <Content Include="gdal2.2.2\hdf5_hl.dll" />
+    <Content Include="gdal2.2.2\hdf5_hldll.dll" />
+    <Content Include="gdal2.2.2\hdf5_hl_cpp.dll" />
+    <Content Include="gdal2.2.2\hdf5_hl_cppdll.dll" />
+    <Content Include="gdal2.2.2\hdf5_hl_f90cstubdll.dll" />
+    <Content Include="gdal2.2.2\hdf5_hl_fortrandll.dll" />
+    <Content Include="gdal2.2.2\hdf5_tools.dll" />
+    <Content Include="gdal2.2.2\hdf_fcstubdll.dll" />
+    <Content Include="gdal2.2.2\hdf_fortrandll.dll" />
+    <Content Include="gdal2.2.2\hm426m.dll" />
+    <Content Include="gdal2.2.2\jpeg.dll" />
+    <Content Include="gdal2.2.2\libcurl.dll" />
+    <Content Include="gdal2.2.2\mfhdf.dll" />
+    <Content Include="gdal2.2.2\mfhdf_fcstubdll.dll" />
+    <Content Include="gdal2.2.2\mfhdf_fortrandll.dll" />
+    <Content Include="gdal2.2.2\msvcp140.dll" />
+    <Content Include="gdal2.2.2\netcdf.dll" />
+    <Content Include="gdal2.2.2\ogr_csharp.dll" />
+    <Content Include="gdal2.2.2\ogr_wrap.dll" />
+    <Content Include="gdal2.2.2\One_Sgp4.dll" />
+    <Content Include="gdal2.2.2\osr_csharp.dll" />
+    <Content Include="gdal2.2.2\osr_wrap.dll" />
+    <Content Include="gdal2.2.2\proj.dll" />
+    <Content Include="gdal2.2.2\szip.dll" />
+    <Content Include="gdal2.2.2\vcruntime140.dll" />
+    <Content Include="gdal2.2.2\x64\SQLite.Interop.dll" />
+    <Content Include="gdal2.2.2\x86\SQLite.Interop.dll" />
+    <Content Include="gdal2.2.2\xdr.dll" />
+    <Content Include="gdal2.2.2\zlib1.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

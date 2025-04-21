@@ -1,0 +1,10 @@
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\casanpp.exe.config
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\casanpp.exe
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\casanpp.pdb
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\gdalconst_csharp.dll
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\gdal_csharp.dll
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\ogr_csharp.dll
+D:\Projects\202501\casa\casanpp\bin\x86\Debug\osr_csharp.dll
+D:\Projects\202501\casa\casanpp\obj\x86\Debug\casanpp.csprojResolveAssemblyReference.cache
+D:\Projects\202501\casa\casanpp\obj\x86\Debug\casanpp.exe
+D:\Projects\202501\casa\casanpp\obj\x86\Debug\casanpp.pdb

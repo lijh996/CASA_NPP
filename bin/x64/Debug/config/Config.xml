@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration id="configuration">  
+  <TimeConfig>
+    <Path StartYear="2020" EndYear="2020" StartMonth="7" EndMonth="7"/>
+  </TimeConfig>
+  <PathConfig>
+    <Path DataName="NDVI" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="NDVI_"/>
+    <Path DataName="PRCP" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="PREC_"/>
+    <Path DataName="LUCC" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="LUCC_"/>
+	<Path DataName="Solar Radiation" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="RADI_"/>
+	<Path DataName="Air Temperature" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="TAIR_"/>
+	<Path DataName="Optimal Air Temperature" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="Topt_"/>
+	<Path DataName="Results" DataPath="D:\Projects\202501\casa\casanpp\bin\x64\Debug\DATA\" DataPrefix="NPP_"/>
+  </PathConfig>
+</configuration>

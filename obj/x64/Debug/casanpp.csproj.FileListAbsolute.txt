@@ -1,0 +1,6 @@
+D:\Projects\202501\casa\casanpp\bin\x64\Debug\casanpp.exe.config
+D:\Projects\202501\casa\casanpp\bin\x64\Debug\casanpp.exe
+D:\Projects\202501\casa\casanpp\bin\x64\Debug\casanpp.pdb
+D:\Projects\202501\casa\casanpp\obj\x64\Debug\casanpp.csprojResolveAssemblyReference.cache
+D:\Projects\202501\casa\casanpp\obj\x64\Debug\casanpp.exe
+D:\Projects\202501\casa\casanpp\obj\x64\Debug\casanpp.pdb

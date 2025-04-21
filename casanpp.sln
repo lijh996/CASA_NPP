@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "casanpp", "casanpp.csproj", "{82E09FA6-42CC-4C85-9902-E87FCE88B11F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82E09FA6-42CC-4C85-9902-E87FCE88B11F}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{82E09FA6-42CC-4C85-9902-E87FCE88B11F}.Debug|Any CPU.Build.0 = Debug|x64
+		{82E09FA6-42CC-4C85-9902-E87FCE88B11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E09FA6-42CC-4C85-9902-E87FCE88B11F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C18D5DF-FAD6-42BB-A2BB-2A0D1902AE5A}
+	EndGlobalSection
+EndGlobal

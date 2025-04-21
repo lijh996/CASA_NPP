@@ -1,0 +1,15 @@
+﻿1,常绿针叶林(Evergreen Needleleaf Forest),0.929628,0.023,0.389
+2,常绿阔叶林(Evergreen Broadleaf Forest),0.939527,0.023,0.985
+3,落叶针叶林(Deciduous Needleleaf Forest),0,0.023,0.485
+4,落叶阔叶林(Deciduous Broadleaf Forest),0.9327,0.023,0.692
+5,Mixed Forest,0.9398,0.023,0.475
+6,Closed Shrubland,0.934175,0.023,0.429
+7,Open Shrubland,0.91215,0.023,0.429
+8,Woody Savanna,0,0.023,0.429
+9,Savanna,0,0.023,0.429
+10,Grassland,0.901183,0.023,0.542
+11,Permanent Wetlands,0.876103,0.023,0.542
+12,Cropland,0.89049,0.023,0.542
+13,Urban or Built-Up,0.85776,0.023,0.542
+14,Cropland/Natural Vegetation Mosaics,0,0.023,0.542
+15,Barren or Sparsely Vegetated,0.90639,0.023,0.542
